@@ -3,10 +3,20 @@ Beginning Site Configuration
 Connecting to site collection
 Applying site template
 Applying templatesiteConfoModif.xml
-1/6 Provisioning Fields
-2/6 Provisioning Content Types
-3/6 Provisioning List instances
-4/6 Provisioning Tenant Settings
-5/6 Provisioning Application Lifecycle Management
-6/6 Provisioning ClientSidePages
+Error applying template templatesiteConfoModif.xml : La balise de début 'pnp:Lists' sur la ligne 268 à la position 8 ne correspond pas à la balise de fin de 'pnp:ListInstance'. Ligne 300, position 11. -    à System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   à System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   à System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   à System.Xml.XmlTextReaderImpl.ParseEndElement()
+   à System.Xml.XmlTextReaderImpl.ParseElementContent()
+   à System.Xml.XmlTextReaderImpl.Read()
+   à System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   à System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   à System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   à System.Xml.Linq.XDocument.Load(Stream stream, LoadOptions options)
+   à System.Xml.Linq.XDocument.Load(Stream stream)
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.ResolveXIncludes(Stream stream) dans D:\GIT\PNPEngineEXE_SubmodulePnP-Sites-Core-FCT\PnP-Sites-Core-FCT\Core\OfficeDevPnP.Core\Framework\Provisioning\Providers\Xml\XMLTemplateProvider.cs:ligne 214
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri, String identifier, ITemplateFormatter formatter, ITemplateProviderExtension[] extensions) dans D:\GIT\PNPEngineEXE_SubmodulePnP-Sites-Core-FCT\PnP-Sites-Core-FCT\Core\OfficeDevPnP.Core\Framework\Provisioning\Providers\Xml\XMLTemplateProvider.cs:ligne 124
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri, ITemplateProviderExtension[] extensions) dans D:\GIT\PNPEngineEXE_SubmodulePnP-Sites-Core-FCT\PnP-Sites-Core-FCT\Core\OfficeDevPnP.Core\Framework\Provisioning\Providers\Xml\XMLTemplateProvider.cs:ligne 81
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri) dans D:\GIT\PNPEngineEXE_SubmodulePnP-Sites-Core-FCT\PnP-Sites-Core-FCT\Core\OfficeDevPnP.Core\Framework\Provisioning\Providers\Xml\XMLTemplateProvider.cs:ligne 76
+   à PNPEngineImport.Templates.TemplatesApplier.Apply(Web web, String templatePath, String templateName) dans D:\GIT\PNPEngineEXE_SubmodulePnP-Sites-Core-FCT\PNPEngineImport\Templates\TemplatesApplier.cs:ligne 34
 Import Terminé
