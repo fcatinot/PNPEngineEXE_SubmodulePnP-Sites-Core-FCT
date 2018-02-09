@@ -36,6 +36,7 @@ namespace PNPEngineExport
                         TemplatesExtractor.Apply(rootWeb, pathXml, nameXml);
                     }
                     LogWriter.Current.WriteLine("Extraction Terminé");
+                    Console.ReadLine();
                 }
             }
             catch (Exception ex)
@@ -47,6 +48,7 @@ namespace PNPEngineExport
                     LogWriter.Current.WriteLine(ex.InnerException.Message);
                     LogWriter.Current.WriteLine(ex.InnerException.StackTrace);
                 }
+                Console.ReadLine();
             }
             finally
             {

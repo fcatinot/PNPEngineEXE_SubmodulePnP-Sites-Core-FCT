@@ -18,6 +18,8 @@ namespace PNPEngineImport
                 LogWriter.Current.WriteLine("Beginning Site Configuration");
 
                 ConnectionSettings connectionSettings = AskForConnectionSettings();
+                Console.Write("Path du xml ( ex: C:\\MyTemplates ) : ");
+                string pathXml = Console.ReadLine();
                 Console.Write("Fichier xml ( ex :template.xml) : ");
                 string nameXml = Console.ReadLine();
                 if (connectionSettings != null)
@@ -30,9 +32,10 @@ namespace PNPEngineImport
                         context.Load(rootWeb, w => w.AllProperties);
                         context.ExecuteQueryRetry();
                         LogWriter.Current.WriteLine("Applying site template");
-                        TemplatesApplier.Apply(rootWeb, nameXml);
+                        TemplatesApplier.Apply(rootWeb, pathXml, nameXml);
                     }
                     LogWriter.Current.WriteLine("Import Terminé");
+                    Console.ReadLine();
                 }
             }
             catch (Exception ex)
@@ -44,6 +47,7 @@ namespace PNPEngineImport
                     LogWriter.Current.WriteLine(ex.InnerException.Message);
                     LogWriter.Current.WriteLine(ex.InnerException.StackTrace);
                 }
+                Console.ReadLine();
             }
             finally
             {

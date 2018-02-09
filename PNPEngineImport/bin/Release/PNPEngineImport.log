@@ -1,0 +1,21 @@
+Beginning Site Configuration
+
+Connecting to site collection
+Applying site template
+Applying templatelightcontenttypehub.xml
+Error applying template templatelightcontenttypehub.xml : La balise de début 'pnp:SiteFields' sur la ligne 6 à la position 8 ne correspond pas à la balise de fin de 'Field'. Ligne 110, position 11. -    à System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   à System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   à System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   à System.Xml.XmlTextReaderImpl.ParseEndElement()
+   à System.Xml.XmlTextReaderImpl.ParseElementContent()
+   à System.Xml.XmlTextReaderImpl.Read()
+   à System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   à System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   à System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   à System.Xml.Linq.XDocument.Load(Stream stream, LoadOptions options)
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.ResolveXIncludes(Stream stream)
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri, String identifier, ITemplateFormatter formatter, ITemplateProviderExtension[] extensions)
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri, ITemplateProviderExtension[] extensions)
+   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri)
+   à PNPEngineImport.Templates.TemplatesApplier.Apply(Web web, String templatePath, String templateName) dans D:\GIT\PNPEngineEXE\PNPEngineImport\Templates\TemplatesApplier.cs:ligne 34
+Import Terminé

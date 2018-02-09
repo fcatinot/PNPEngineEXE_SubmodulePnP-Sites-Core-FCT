@@ -13,15 +13,15 @@ namespace PNPEngineImport.Templates
 {
     public static class TemplatesApplier
     {
-        public static void Apply(Web web, List<string> templateNames)
+        public static void Apply(Web web, string templatePath, List<string> templateNames)
         {
             foreach (string templateName in templateNames)
             {
-                Apply(web, templateName);
+                Apply(web, templatePath, templateName);
             }
         }
 
-        public static void Apply(Web web, string templateName)
+        public static void Apply(Web web, string templatePath, string templateName)
         {
             try
             {
@@ -31,9 +31,7 @@ namespace PNPEngineImport.Templates
                 // Provider to get template
                 XMLTemplateProvider provider = new XMLFileSystemTemplateProvider();
                 provider.Connector = connector;
-                var result =
-                    provider.GetTemplate(LocalFilePaths.LocalPath +
-                                         "\\Templates\\" + templateName);
+                var result = provider.GetTemplate(templatePath + "\\" + templateName);
 
                 // Connector needs to be specified once more in ProvisioningTemplate because he is not copied from the provider on template creation
                 result.Connector = connector;

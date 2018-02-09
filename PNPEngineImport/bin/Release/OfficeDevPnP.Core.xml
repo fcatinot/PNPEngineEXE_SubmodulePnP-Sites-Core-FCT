@@ -2332,6 +2332,11 @@
               Looks up a localized string similar to This page is an uncustomized, default home page, so no need to extract it..
             </summary>
         </member>
+        <member name="P:OfficeDevPnP.Core.CoreResources.Provisioning_ObjectHandlers_ClientSidePageContents_ErrorDuringFileExport">
+            <summary>
+              Looks up a localized string similar to Error during automatic client side page connected file export: {0}..
+            </summary>
+        </member>
         <member name="P:OfficeDevPnP.Core.CoreResources.Provisioning_ObjectHandlers_ClientSidePageContents_NoValidPage">
             <summary>
               Looks up a localized string similar to This page is not a valid client side page and can&apos;t be extracted. Underlying error = {0}..
@@ -2655,6 +2660,11 @@
         <member name="P:OfficeDevPnP.Core.CoreResources.Provisioning_ObjectHandlers_ListInstances_SkipAddingOrUpdatingCustomActions">
             <summary>
               Looks up a localized string similar to Skip adding/updating custom actions because the site has &quot;noscript&quot; enabled..
+            </summary>
+        </member>
+        <member name="P:OfficeDevPnP.Core.CoreResources.Provisioning_ObjectHandlers_ListInstances_SkipExpiredWebHook">
+            <summary>
+              Looks up a localized string similar to Webhook {0} has been expired and will be skipped during creation/update of list {1}..
             </summary>
         </member>
         <member name="P:OfficeDevPnP.Core.CoreResources.Provisioning_ObjectHandlers_ListInstances_Updating_field__0_">
@@ -9186,6 +9196,23 @@
             Clears cache
             </summary>
         </member>
+        <member name="T:OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.Utilities.ClientSidePageContentsHelper">
+            <summary>
+            Helper class holding public methods that used by the client side page object handler. The purpose is to be able to reuse these public methods in a extensibility provider
+            </summary>
+        </member>
+        <member name="M:OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.Utilities.ClientSidePageContentsHelper.ExtractClientSidePage(Microsoft.SharePoint.Client.Web,OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate,OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateCreationInformation,OfficeDevPnP.Core.Diagnostics.PnPMonitoredScope,System.String,System.String,System.Boolean)">
+            <summary>
+            Extracts a client side page
+            </summary>
+            <param name="web">Web to extract the page from</param>
+            <param name="template">Current provisioning template that will hold the extracted page</param>
+            <param name="creationInfo">ProvisioningTemplateCreationInformation passed into the provisioning engine</param>
+            <param name="scope">Scope used for logging</param>
+            <param name="pageUrl">Url of the page to extract</param>
+            <param name="pageName">Name of the page to extract</param>
+            <param name="isHomePage">Is this a home page?</param>
+        </member>
         <member name="T:OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateApplyingInformation">
             <summary>
             Handles methods for applying provisioning templates
@@ -14362,6 +14389,18 @@
             <remarks/>
         </member>
         <member name="F:OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201801.CanvasControlWebPartType.QuickLinks">
+            <remarks/>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201801.CanvasControlWebPartType.CustomMessageRegion">
+            <remarks/>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201801.CanvasControlWebPartType.Divider">
+            <remarks/>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201801.CanvasControlWebPartType.MicrosoftForms">
+            <remarks/>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201801.CanvasControlWebPartType.Spacer">
             <remarks/>
         </member>
         <member name="T:OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.V201801.CanvasSectionType">
@@ -23818,6 +23857,26 @@
         <member name="F:OfficeDevPnP.Core.Pages.DefaultClientSideWebParts.QuickLinks">
             <summary>
             Quick Links webpart
+            </summary>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Pages.DefaultClientSideWebParts.CustomMessageRegion">
+            <summary>
+            Custom Message Region web part
+            </summary>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Pages.DefaultClientSideWebParts.Divider">
+            <summary>
+            Divider web part
+            </summary>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Pages.DefaultClientSideWebParts.MicrosoftForms">
+            <summary>
+            Microsoft Forms web part
+            </summary>
+        </member>
+        <member name="F:OfficeDevPnP.Core.Pages.DefaultClientSideWebParts.Spacer">
+            <summary>
+            Spacer web part
             </summary>
         </member>
         <member name="T:OfficeDevPnP.Core.Pages.ClientSidePageLayoutType">
@@ -34977,7 +35036,7 @@
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.DeleteWeb(Microsoft.SharePoint.Client.Web,System.String)">
             <summary>
-            Deletes the child website with the specified leaf URL, from a parent Web, if it exists. 
+            Deletes the child website with the specified leaf URL, from a parent Web, if it exists.
             </summary>
             <param name="parentWeb">The parent Web (site) to delete from</param>
             <param name="leafUrl">A string that represents the URL leaf name.</param>
@@ -34985,7 +35044,7 @@
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.GetAllWebUrls(Microsoft.SharePoint.Client.Site)">
             <summary>
-            Gets the collection of the URLs of all Web sites that are contained within the site collection, 
+            Gets the collection of the URLs of all Web sites that are contained within the site collection,
             including the top-level site and its subsites.
             </summary>
             <param name="site">Site collection to retrieve the URLs for.</param>
@@ -35012,7 +35071,7 @@
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.WebExists(Microsoft.SharePoint.Client.Web,System.String)">
             <summary>
-            Determines if a child Web site with the specified leaf URL exists. 
+            Determines if a child Web site with the specified leaf URL exists.
             </summary>
             <param name="parentWeb">The Web site to check under</param>
             <param name="leafUrl">A string that represents the URL leaf name.</param>
@@ -35049,26 +35108,26 @@
             <returns>True is publishing site, false otherwise</returns>
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.IsNoScriptSite(Microsoft.SharePoint.Client.Site)">
-            <summary>
-            Detects if the site in question has no script enabled or not. Detection is done by verifying if the AddAndCustomizePages permission is missing.
+             <summary>
+             Detects if the site in question has no script enabled or not. Detection is done by verifying if the AddAndCustomizePages permission is missing.
             
-            See https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
-            for the effects of NoScript
+             See https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+             for the effects of NoScript
             
-            </summary>
-            <param name="site">site to verify</param>
-            <returns>True if noscript, false otherwise</returns>
+             </summary>
+             <param name="site">site to verify</param>
+             <returns>True if noscript, false otherwise</returns>
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.IsNoScriptSite(Microsoft.SharePoint.Client.Web)">
-            <summary>
-            Detects if the site in question has no script enabled or not. Detection is done by verifying if the AddAndCustomizePages permission is missing.
+             <summary>
+             Detects if the site in question has no script enabled or not. Detection is done by verifying if the AddAndCustomizePages permission is missing.
             
-            See https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
-            for the effects of NoScript
+             See https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+             for the effects of NoScript
             
-            </summary>
-            <param name="web">Web to verify</param>
-            <returns>True if noscript, false otherwise</returns>
+             </summary>
+             <param name="web">Web to verify</param>
+             <returns>True if noscript, false otherwise</returns>
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.GetAppInstances(Microsoft.SharePoint.Client.Web,System.Linq.Expressions.Expression{System.Func{Microsoft.SharePoint.Client.AppInstance,System.Object}}[])">
             <summary>
@@ -35115,7 +35174,7 @@
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.SiteSearch(Microsoft.SharePoint.Client.Web)">
             <summary>
-            Returns all site collections that are indexed. In MT the search center, mysite host and contenttype hub are defined as non indexable by default and thus 
+            Returns all site collections that are indexed. In MT the search center, mysite host and contenttype hub are defined as non indexable by default and thus
             are not returned
             </summary>
             <param name="web">Site to be processed - can be root web or sub site</param>
@@ -35325,7 +35384,7 @@
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.SetLocalizationLabels(Microsoft.SharePoint.Client.Web,System.String,System.String,System.String)">
             <summary>
-            Can be used to set translations for different cultures. 
+            Can be used to set translations for different cultures.
             </summary>
             <example>
                 web.SetLocalizationForSiteLabels("fi-fi", "Name of the site in Finnish", "Description in Finnish");
@@ -35338,7 +35397,7 @@
         </member>
         <member name="M:Microsoft.SharePoint.Client.WebExtensions.ApplyProvisioningTemplate(Microsoft.SharePoint.Client.Web,OfficeDevPnP.Core.Framework.Provisioning.Model.ProvisioningTemplate,OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ProvisioningTemplateApplyingInformation)">
             <summary>
-            Can be used to apply custom remote provisioning template on top of existing site. 
+            Can be used to apply custom remote provisioning template on top of existing site.
             </summary>
             <param name="web">web to apply remote template</param>
             <param name="template">ProvisioningTemplate with the settings to be applied</param>

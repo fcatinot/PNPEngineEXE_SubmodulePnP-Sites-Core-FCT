@@ -1,0 +1,3 @@
+[submodule "PnP-Sites-Core-FCT"]
+	path = PnP-Sites-Core-FCT
+	url = https://github.com/fcatinot/PnP-Sites-Core-FCT.git

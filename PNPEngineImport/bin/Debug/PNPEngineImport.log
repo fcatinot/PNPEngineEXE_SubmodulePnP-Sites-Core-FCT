@@ -2,14 +2,11 @@ Beginning Site Configuration
 
 Connecting to site collection
 Applying site template
-Applying test.xml
-1/9 Provisioning Regional Settings
-2/9 Provisioning Site Security
-3/9 Provisioning List instances
-4/9 Provisioning Tenant Settings
-5/9 Provisioning Application Lifecycle Management
-6/9 Provisioning ClientSidePages
-7/9 Provisioning Custom Actions
-8/9 Provisioning Web Settings
-9/9 Provisioning Navigation
+Applying templatesiteConfoModif.xml
+1/6 Provisioning Fields
+2/6 Provisioning Content Types
+3/6 Provisioning List instances
+4/6 Provisioning Tenant Settings
+5/6 Provisioning Application Lifecycle Management
+6/6 Provisioning ClientSidePages
 Import Terminé
