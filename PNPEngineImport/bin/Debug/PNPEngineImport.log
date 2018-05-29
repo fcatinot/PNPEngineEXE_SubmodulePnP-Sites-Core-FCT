@@ -2,12 +2,160 @@ Beginning Site Configuration
 
 Connecting to site collection
 Applying site template
-Applying templatesiteConfoModif.xml
-1/7 Provisioning Fields
-2/7 Provisioning Content Types
-3/7 Provisioning List instances
-4/7 Provisioning Tenant Settings
-5/7 Provisioning Application Lifecycle Management
-6/7 Provisioning ClientSidePages
-7/7 Provisioning Navigation
+Applying txt.xml
+Warning:ListInstance Bibliothèque de styles is a Style Library of a site with NoScript enabled and will be skipped
+01/13 - Regional Settings
+02/13 - Site Security
+03/13 - Fields
+Progress:Field|{a743d401-2c3a-4f50-8fb6-9ea03156fbce}|1|69
+Progress:Field|{f8a0cc08-968d-4128-b758-4071e024bf76}|2|69
+Progress:Field|{2e3dee0d-ca87-4819-aa3a-8849c8f832a0}|3|69
+Progress:Field|{16e6790f-8439-46d9-af68-f4f2439ab438}|4|69
+Progress:Field|{e079c90f-4598-4c41-b453-e64c54cf7ca7}|5|69
+Progress:Field|{f9949f11-6b4d-4015-9208-8e7e7cd980f7}|6|69
+Progress:Field|{fa5b0312-a245-485d-ba01-78eeea34a685}|7|69
+Progress:Field|{78d30618-94e1-4b31-8157-7a5b18098b3c}|8|69
+Progress:Field|{b1b6121b-a374-4b41-8a5f-28a7feaffa32}|9|69
+Progress:Field|{774e7924-14b3-4e19-8de6-dec7438b058f}|10|69
+Progress:Field|{6756cb25-6a9a-4f7a-bdb4-adce11299a30}|11|69
+Progress:Field|{9ca78027-4b19-4c85-a8e9-1a6295675776}|12|69
+Progress:Field|{03f0a932-a986-4950-9917-cd2d755d2bd8}|13|69
+Progress:Field|{8306cd33-31f5-412d-b049-a55430056011}|14|69
+Progress:Field|{8736e03a-bb70-406a-aca2-fcfdc75a3b27}|15|69
+Progress:Field|{21b8083d-1360-4c7f-a032-edede93105d2}|16|69
+Progress:Field|{3bafdd41-4d8d-4d00-a11c-2f7df6b72a37}|17|69
+Progress:Field|{27760943-e972-43f8-8365-dc453c3bc863}|18|69
+Progress:Field|{59873a43-1974-4d90-a30f-a11fa3d1b1ef}|19|69
+Progress:Field|{9fe64944-7174-4623-8e3b-080233ab5cbb}|20|69
+Progress:Field|{3c393c5c-27a3-42c6-a3e1-6fd530b37f6b}|21|69
+Progress:Field|{21965c60-c0ae-4bdb-abff-ab2aa16985af}|22|69
+Progress:Field|{bb8e7d60-0bbb-48aa-a88b-01f23142a5f7}|23|69
+Progress:Field|{729fee6a-b468-418c-8057-8bdb08b6a5dc}|24|69
+Progress:Field|{5ab9686d-f2de-4703-963f-84d934c38ff6}|25|69
+Progress:Field|{9c42e16d-aa5d-4ce0-a9fe-e681030a5e66}|26|69
+Progress:Field|{8fb75f6f-864f-4d62-90a8-057be8d5f582}|27|69
+Progress:Field|{bc855970-b1f2-4330-8187-7e505aa80a45}|28|69
+Progress:Field|{f3f76072-3d6d-4717-91e3-257078a45ff7}|29|69
+Progress:Field|{68be4077-2ccf-4c65-a5eb-d234ccb6e113}|30|69
+Progress:Field|{8796177a-4eb2-4265-bd21-943f9adcde63}|31|69
+Progress:Field|{7d46297f-9d37-4042-b3d2-7355659f2548}|32|69
+Progress:Field|{46ace48b-be0c-490e-867a-00db52b526e5}|33|69
+Progress:Field|{6b0cb992-42d7-4953-9360-a36985a619f0}|34|69
+Progress:Field|{77811294-9fad-4f95-bd61-66e142a5581b}|35|69
+Progress:Field|{ffdde097-01f5-4a57-ad7f-e899b849b151}|36|69
+Progress:Field|{1f29f197-07ad-4be9-9010-77214c079227}|37|69
+Progress:Field|{a2bde6a2-9557-4ccc-bf35-51ff82126fd2}|38|69
+Progress:Field|{fdc4a7a3-1b20-454b-92a0-4ec711618b52}|39|69
+Progress:Field|{42f74ea4-030b-4688-b507-0953972a5afd}|40|69
+Progress:Field|{85574ba7-b95c-47b8-9961-d3244de8bde4}|41|69
+Progress:Field|{745408aa-f78b-45ca-9c7c-88e0f6da7e70}|42|69
+Progress:Field|{f45267ad-0b3d-4472-99ee-f99dc371f2ab}|43|69
+Progress:Field|{3dafe4ad-beec-4627-8f32-8a2d89741356}|44|69
+Progress:Field|{ffa91bbb-6465-4de2-9b38-c61f112fccc0}|45|69
+Progress:Field|{5baf9fbb-d7e2-488f-8899-881c149a4a9a}|46|69
+Progress:Field|{dc19e6bb-deef-4374-aefa-d355138dcff1}|47|69
+Progress:Field|{daf62dbc-1f4a-49ca-a5f8-87b98f4ce525}|48|69
+Progress:Field|{252454c0-516d-4405-a853-6045a8e80cb6}|49|69
+Progress:Field|{596aa9c2-a886-445d-9286-385c2ea1f607}|50|69
+Progress:Field|{6fc57fc8-1562-4cd1-83ff-852b30465cc0}|51|69
+Progress:Field|{bc9618c9-c477-41b0-a3c5-6e8bdac95aed}|52|69
+Progress:Field|{ecf9b3c9-f3d3-410e-b9c9-a27c5da048d4}|53|69
+Progress:Field|{e492efcb-e9d9-41e6-a6b3-42d8889b986a}|54|69
+Progress:Field|{59e474cf-8ad6-4808-8835-5c073eb834ca}|55|69
+Progress:Field|{b74c6ad1-3df0-4a9a-b587-d14223cc7c3f}|56|69
+Progress:Field|{c82d01d3-fe56-48ec-8d2d-fb283e80cdcd}|57|69
+Progress:Field|{ccd8cdd8-950b-446a-8686-718ab0bce0c4}|58|69
+Progress:Field|{6a9dffe5-40d9-499b-9978-0001bb9473bb}|59|69
+Progress:Field|{6cd741e6-d7a9-40d6-982e-1099061f79b0}|60|69
+Progress:Field|{05135fea-7e5b-4524-bccb-49d857c2d717}|61|69
+Progress:Field|{67564deb-cb3e-4cda-925e-2245b263b29a}|62|69
+Progress:Field|{55e5b7ed-f1a1-4a18-81a3-aefcafb43836}|63|69
+Progress:Field|{a7ab7fef-e260-4067-b4c7-6728383171f8}|64|69
+Progress:Field|{e11e85ef-3a23-4ea0-a40f-ec8dc16fc4a2}|65|69
+Progress:Field|{365dd3f1-d6c6-4bc9-927c-057d9ead25e6}|66|69
+Progress:Field|{33283df2-08a0-427a-8690-a5d1c6861bed}|67|69
+Progress:Field|{720440f8-f4de-4895-aa86-8c15aa8c4da9}|68|69
+Progress:Field|{d21cf3f8-055a-4af2-ad3f-10087513a828}|69|69
+Completed:Done processing fields
+04/13 - Content Types
+Progress:Content Type|Produit|1|2
+Progress:Content Type|Commande|2|2
+Completed:Done processing Content Types
+05/13 - List instances
+Progress:List|Documents|1|6
+Progress:List|Liste|2|6
+Progress:List|Liste2|3|6
+Progress:List|Modèles de formulaire|4|6
+Progress:List|Pages du site|5|6
+Progress:List|Pièces jointes|6|6
+Progress:Site Columns for list Liste|_ComplianceFlags|1|6
+Progress:Site Columns for list Liste|_ComplianceTag|2|6
+Progress:Site Columns for list Liste|_ComplianceTagWrittenTime|3|6
+Progress:Site Columns for list Liste|_ComplianceTagUserId|4|6
+Progress:Site Columns for list Liste|_IsRecord|5|6
+Progress:Site Columns for list Liste|ComplianceAssetId|6|6
+Progress:Site Columns for list Liste2|ComplianceAssetId|1|6
+Progress:Site Columns for list Liste2|_ComplianceFlags|2|6
+Progress:Site Columns for list Liste2|_ComplianceTag|3|6
+Progress:Site Columns for list Liste2|_ComplianceTagWrittenTime|4|6
+Progress:Site Columns for list Liste2|_ComplianceTagUserId|5|6
+Progress:Site Columns for list Liste2|_IsRecord|6|6
+Progress:Site Columns for list Modèles de formulaire|ComplianceAssetId|1|16
+Progress:Site Columns for list Modèles de formulaire|FormName|2|16
+Progress:Site Columns for list Modèles de formulaire|FormCategory|3|16
+Progress:Site Columns for list Modèles de formulaire|FormVersion|4|16
+Progress:Site Columns for list Modèles de formulaire|FormId|5|16
+Progress:Site Columns for list Modèles de formulaire|FormLocale|6|16
+Progress:Site Columns for list Modèles de formulaire|FormDescription|7|16
+Progress:Site Columns for list Modèles de formulaire|ShowInCatalog|8|16
+Progress:Site Columns for list Modèles de formulaire|LinkTemplateName|9|16
+Progress:Site Columns for list Modèles de formulaire|_ComplianceFlags|10|16
+Progress:Site Columns for list Modèles de formulaire|_ComplianceTag|11|16
+Progress:Site Columns for list Modèles de formulaire|_ComplianceTagWrittenTime|12|16
+Progress:Site Columns for list Modèles de formulaire|_ComplianceTagUserId|13|16
+Progress:Site Columns for list Modèles de formulaire|_IsRecord|14|16
+Progress:Site Columns for list Modèles de formulaire|_CommentCount|15|16
+Progress:Site Columns for list Modèles de formulaire|_LikeCount|16|16
+Progress:Site Columns for list Pages du site|WikiField|1|7
+Progress:Site Columns for list Pages du site|CanvasContent1|2|7
+Progress:Site Columns for list Pages du site|BannerImageUrl|3|7
+Progress:Site Columns for list Pages du site|Description|4|7
+Progress:Site Columns for list Pages du site|PromotedState|5|7
+Progress:Site Columns for list Pages du site|FirstPublishedDate|6|7
+Progress:Site Columns for list Pages du site|LayoutWebpartsContent|7|7
+Progress:Site Columns for list Pièces jointes|ComplianceAssetId|1|8
+Progress:Site Columns for list Pièces jointes|_ComplianceFlags|2|8
+Progress:Site Columns for list Pièces jointes|_ComplianceTag|3|8
+Progress:Site Columns for list Pièces jointes|_ComplianceTagWrittenTime|4|8
+Progress:Site Columns for list Pièces jointes|_ComplianceTagUserId|5|8
+Progress:Site Columns for list Pièces jointes|_IsRecord|6|8
+Progress:Site Columns for list Pièces jointes|_CommentCount|7|8
+Progress:Site Columns for list Pièces jointes|_LikeCount|8|8
+Progress:List Columns for list Liste2|{f2eecfc7-2606-462a-8284-d0153a4a2449}|0|4
+Progress:List Columns for list Liste2|{94867f68-9e9b-4ead-9d77-d95393534f8e}|0|4
+Progress:List Columns for list Liste2|{582fa42a-1ee1-4a6f-a1c0-9821539c5418}|0|4
+Progress:List Columns for list Liste2|{b05354a4-ae39-4706-9241-82cb8faaa91d}|0|4
+Progress:List Columns for list Pièces jointes|{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}|0|1
+Progress:Views for list Documents|Tous les documents|1|1
+Progress:Views for list Liste|Tous les éléments|1|1
+Progress:Views for list Liste2|Tous les éléments|1|1
+Progress:Views for list Modèles de formulaire|Tous les documents|1|2
+Progress:Views for list Modèles de formulaire|Tous les formulaires|2|2
+Progress:Views for list Pages du site|Par auteur|1|5
+Progress:Views for list Pages du site|Toutes les pages|2|5
+Progress:Views for list Pages du site|Créé(e) par moi|3|5
+Progress:Views for list Pages du site|Modifications récentes|4|5
+Progress:Views for list Pages du site|Par éditeur|5|5
+Progress:Views for list Pièces jointes|Tous les documents|1|1
+Completed:Done processing lists
+06/13 - List instances Data Rows
+07/13 - Files
+Progress:File|__siteIcon__.jpg|1|1
+Completed:Done processing files
+08/13 - Tenant Settings
+09/13 - Application Lifecycle Management
+10/13 - ClientSidePages
+11/13 - Web Settings
+12/13 - Navigation
+13/13 - Extensibility Providers
 Import Terminé

@@ -2,20 +2,22 @@ Beginning Site Configuration
 
 Connecting to site collection
 Applying site template
-Applying templatelightcontenttypehub.xml
-Error applying template templatelightcontenttypehub.xml : La balise de début 'pnp:SiteFields' sur la ligne 6 à la position 8 ne correspond pas à la balise de fin de 'Field'. Ligne 110, position 11. -    à System.Xml.XmlTextReaderImpl.Throw(Exception e)
-   à System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
-   à System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
-   à System.Xml.XmlTextReaderImpl.ParseEndElement()
-   à System.Xml.XmlTextReaderImpl.ParseElementContent()
-   à System.Xml.XmlTextReaderImpl.Read()
-   à System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
-   à System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
-   à System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
-   à System.Xml.Linq.XDocument.Load(Stream stream, LoadOptions options)
-   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.ResolveXIncludes(Stream stream)
-   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri, String identifier, ITemplateFormatter formatter, ITemplateProviderExtension[] extensions)
-   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri, ITemplateProviderExtension[] extensions)
-   à OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml.XMLTemplateProvider.GetTemplate(String uri)
-   à PNPEngineImport.Templates.TemplatesApplier.Apply(Web web, String templatePath, String templateName) dans D:\GIT\PNPEngineEXE\PNPEngineImport\Templates\TemplatesApplier.cs:ligne 34
+Applying pomonaDaf.xml
+1/14 Provisioning Regional Settings
+2/14 Provisioning Supported UI Languages
+3/14 Provisioning Site Security
+4/14 Provisioning Features
+5/14 Provisioning Fields
+6/14 Provisioning Content Types
+7/14 Provisioning List instances
+Error applying template pomonaDaf.xml : La colonne « Photo » n’existe pas. Elle a peut-être été supprimée par un autre utilisateur. -    à Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   à Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   à Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   à Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   à Microsoft.SharePoint.Client.ClientContextExtensions.ExecuteQueryImplementation(ClientRuntimeContext clientContext, Int32 retryCount, Int32 delay, String userAgent)
+   à Microsoft.SharePoint.Client.ClientObjectExtensions.EnsureProperties[T](T clientObject, Expression`1[] propertySelector)
+   à OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ObjectListInstance.CreateView(Web web, View view, ViewCollection existingViews, List createdList, PnPMonitoredScope monitoredScope, TokenParser parser, Int32 currentViewIndex, Int32 total)
+   à OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.ObjectListInstance.ProvisionObjects(Web web, ProvisioningTemplate template, TokenParser parser, ProvisioningTemplateApplyingInformation applyingInformation)
+   à OfficeDevPnP.Core.Framework.Provisioning.ObjectHandlers.SiteToTemplateConversion.ApplyRemoteTemplate(Web web, ProvisioningTemplate template, ProvisioningTemplateApplyingInformation provisioningInfo)
+   à PNPEngineImport.Templates.TemplatesApplier.Apply(Web web, String templatePath, String templateName) dans D:\GIT\PNPEngineEXE\PNPEngineImport\Templates\TemplatesApplier.cs:ligne 44
 Import Terminé

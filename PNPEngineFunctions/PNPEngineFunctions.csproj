@@ -150,11 +150,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionSettings.cs" />
+    <Compile Include="Templates\ConfigureXmlToImportExportExtensibilityHandler.cs" />
+    <Compile Include="Templates\CopyElementsExtensibilityHandler.cs" />
+    <Compile Include="Templates\CopyListTemplateExtensibilityHandler.cs" />
+    <Compile Include="Templates\CopyModernPagesExtensibilityHandler.cs" />
+    <Compile Include="Templates\CopyWikiPagesExtensibilityHandler.cs" />
     <Compile Include="LocalFilePaths.cs" />
     <Compile Include="LogWriter.cs" />
     <Compile Include="O365LoginPasswdSiteCollectionConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ContainerFolder.cs" />
     <Compile Include="TokenHelper.cs" />
   </ItemGroup>
   <ItemGroup>

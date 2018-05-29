@@ -19,15 +19,66 @@ namespace PNPEngineExport.Templates
             try
             {
                 Handlers DefaultHandlers = Handlers.All;
+
+                //Connector in Sharepoint Site
+                //string _containerFolder = PNPEngineFunctions.ContainerFolder.SetContainerFolder(web, connectionSettings);
+                //var connector = new SharePointConnector(web.Context, web.Url, _containerFolder);
+                var connector = new FileSystemConnector(templatePath, string.Empty);
+
+                ExtensibilityHandler CopyWikiPagesExtensibilityHandler = new ExtensibilityHandler
+                {
+                    Type = "PNPEngineFunctions.Templates.CopyWikiPagesExtensibilityHandler",
+                    Assembly = "PNPEngineFunctions",
+                    Enabled = true,
+                    Configuration = ""
+                };
+
+                ExtensibilityHandler CopyElementsExtensibilityHandler = new ExtensibilityHandler
+                {
+                    Type = "PNPEngineFunctions.Templates.CopyElementsExtensibilityHandler",
+                    Assembly = "PNPEngineFunctions",
+                    Enabled = true,
+                    Configuration = ""
+                };
+
+                ExtensibilityHandler CopyModernPagesExtensibilityHandler = new ExtensibilityHandler
+                {
+                    Type = "PNPEngineFunctions.Templates.CopyModernPagesExtensibilityHandler",
+                    Assembly = "PNPEngineFunctions",
+                    Enabled = true,
+                    Configuration = ""
+                };
+
+                ExtensibilityHandler ConfigureXmlToImportExportExtensibilityHandler = new ExtensibilityHandler
+                {
+                    Type = "PNPEngineFunctions.Templates.ConfigureXmlToImportExportExtensibilityHandler",
+                    Assembly = "PNPEngineFunctions",
+                    Enabled = true,
+                    Configuration = ""
+                };
+
+                ExtensibilityHandler CopyListTemplateExtensibilityHandler = new ExtensibilityHandler
+                {
+                    Type = "PNPEngineFunctions.Templates.CopyListTemplateExtensibilityHandler",
+                    Assembly = "PNPEngineFunctions",
+                    Enabled = true,
+                    Configuration = ""
+                };
+
                 // Get source template
                 var sourceCreationInformation = new ProvisioningTemplateCreationInformation(web)
                 {
                     HandlersToProcess = DefaultHandlers,
-                    
-                };
-                sourceCreationInformation.ProgressDelegate = (message, step, total) =>
-                {
-                    LogWriter.Current.WriteLine(string.Format("{0}/{1} Extracting {2}", step, total, message));
+                    FileConnector = connector,
+                    ExtensibilityHandlers = new List<ExtensibilityHandler> { CopyWikiPagesExtensibilityHandler, CopyElementsExtensibilityHandler, CopyModernPagesExtensibilityHandler, ConfigureXmlToImportExportExtensibilityHandler, CopyListTemplateExtensibilityHandler },
+                    MessagesDelegate = delegate (string message, ProvisioningMessageType messageType)
+                    {
+                        LogWriter.Current.WriteLine(string.Format("{0}:{1}", messageType.ToString(), message));
+                    },
+                    ProgressDelegate = delegate (string message, int progress, int total)
+                    {
+                        LogWriter.Current.WriteLine(string.Format("{0:00}/{1:00} - {2}", progress, total, message));
+                    }
                 };
 
                 // Get template from existing site
